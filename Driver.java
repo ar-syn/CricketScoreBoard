@@ -17,10 +17,10 @@ public class Driver {
         List<String> Over2 = Arrays.asList("W", "4", "4", "Wd", "W", "1", "6");
 
         playOver(T1, Over);
-        PrintHelper.print(T1);
+        PrintHelper.printScoreCard(T1);
 
         playOver(T1, Over2);
-        PrintHelper.print(T1);
+        PrintHelper.printScoreCard(T1);
 
         Team T2 = new Team(2, players);
         T2.setBattingOrder(Arrays.asList(6, 7, 8, 9, 10));
@@ -28,10 +28,10 @@ public class Driver {
         List<String> Over4 = Arrays.asList("6", "1", "W", "W");
 
         playOver(T2, Over3);
-        PrintHelper.print(T2);
+        PrintHelper.printScoreCard(T2);
 
         playOver(T2, Over4);
-        PrintHelper.print(T2);
+        PrintHelper.printScoreCard(T2);
 
         PrintHelper.printWinningTeam(T1, T2);
 
