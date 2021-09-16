@@ -3,7 +3,7 @@ package Helper;
 import Core.Team;
 
 public class PrintHelper {
-    public static void print(Team team){
+    public static void printScoreCard(Team team){
         System.out.println("ScoreCard for Core.Team " + team.getTeamNumber() );
         System.out.format("%s%10s%10s%10s%10s\n", "Core.Player Name", "Score", "4s", "6s", "Balls");
         team.getPlayers().forEach(player -> {
